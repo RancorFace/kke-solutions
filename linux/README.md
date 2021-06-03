@@ -1,5 +1,7 @@
 # System Administration Tasks
+
 ## General Tips
+
 * Always verify your task using one or more of the approaches below:
   * Use Curl command to the test the task. This is particular useful for verifying tasks that involve HTTP/S servers e.g. Apache, Nginx, Firewalld, Iptables. Usage is: `curl <HTTP URL>`. Examples:
     * Simple URL fetch: `curl http://stapp01:8080/`. You should get a valid HTML content returned back.
@@ -24,11 +26,11 @@
       * For similar environment on Ubuntu, [Katakoda Ubuntu Playground](https://www.katacoda.com/courses/ubuntu/playground)
 
 ## Common mistakes
-* Not reading the question properly. Especially, when you redo the same question, all the names and port values would've changed in the new question. So pay attention to that. 
+
+* Not reading the question properly. Especially, when you redo the same question, all the names and port values would've changed in the new question. So pay attention to that.
 * To restart a systemd service after performing changes (like nginx.conf,httpd.conf, sshd.config), you run `sudo systemctl restart <service>` and not `sudo systemctl start <service>`. The problem with using `start` option is, if the service is already running then nothing is done. So your changes never take effect.
 * For Firewalld tasks, most people miss out on reloading the firewall rules by running `sudo firewall-cmd --reload`
 * For Iptables tasks, forgetting to persist the iptables rules is another common mistake: `sudo service iptables save`
-
 
 ---
 For general tips on getting better at KodeKloud Engineer tasks, [click here](../README.md)
