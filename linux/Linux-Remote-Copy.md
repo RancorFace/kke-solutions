@@ -21,9 +21,9 @@ Copy `/tmp/nautilus.txt.gpg` file from jump server to __App Server 1__ at locati
 
       mv /tmp/nautilus.txt.gpg /home/webdata
 
-__Optional:__ Change ownership of the file:
+  __Optional:__ Change ownership of the file:
 
-    chown root:root /home/webdata/nautilus.txt.gpg
+      chown root:root /home/webdata/nautilus.txt.gpg
 
 ## Verification
 
