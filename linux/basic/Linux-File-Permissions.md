@@ -6,6 +6,14 @@ There are new requirements to automate a backup process that was performed manua
 
 Please give executable permissions to `/tmp/xfusioncorp.sh` script on App Server 1. Also make sure every user can execute it.
 
+### Explanation
+
+**Question asks you to make sure every user is able to execute the script, not only the super user or sudo users.**
+
+Since its a bash script not a normal file so it is asked to give it executable permission so that server users can run the script later whenever needed.
+
+Please note that in case of bash script `bash` is the interpreter that is actually going to execute the script and the interpreter needs to read the script. Even if you have given it only executable permission the interpreter i.e `bash` will not be able to execute it. You have to give it read permission as well along with execute permission.
+
 ## Solution
 
 * Login to stapp01 and change to `root`:
