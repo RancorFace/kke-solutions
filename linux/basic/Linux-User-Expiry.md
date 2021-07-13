@@ -17,12 +17,13 @@ Therefore, create a user named `mark` on the _App Server 1_. Set `expiry date` t
 
       id mark
 
-* Create user `mark`:
+* Create user `mark` with account expiry date:
 
-      useradd -s /sbin/nologin ravi
+      useradd -e 2021-04-15 mark
 
-* Change expiry date for `mark` user:
+  or
 
+      useradd mark
       chage -E 2021-04-15 mark
 
 ## Verification
